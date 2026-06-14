@@ -79,9 +79,14 @@ const infos = {
       extensao: 3.337, 
       texto: "Oitava etapa da temporada<br>Número de voltas: 78<br>Distância total: 260,286 km<br>Número de curvas: 19<br>Recorde da pista: 1:12.909 — Lewis Hamilton (2021)<br>Tipo: circuito urbano histórico<br>Condições típicas: classificação decisiva e poucas ultrapassagens<br><br>Mônaco continua sendo o circuito mais tradicional e prestigiado da Fórmula 1.",
       estilo: "cardjsGPs"
-    },
+    }  
+  ]
+};
+
+const equipes = {
+    cards: [
     {
-      id: 9 ,
+      id: "eq1",
       noticia: ["Equipes"],
       imagem: "imagens/Mercedes f1 Team.jpg",
       titulo: "Mercedes-AMG Petronas Formula One Team",
@@ -91,7 +96,7 @@ const infos = {
       estilo: "cardjsMerc"
     },
     {
-      id: 10 ,
+      id: "eq2",
       noticia: ["Equipes"],
       imagem: "imagens/Ferrari.jpg",
       titulo: "Scuderia Ferrari HP",
@@ -101,7 +106,7 @@ const infos = {
       estilo:"cardjFer"
     },
     {
-      id: 11 ,
+      id: "eq3",
       noticia: ["Equipes"],
       imagem: "imagens/Mclaren.jpg",
       titulo: "McLaren Mastercard F1 Team",
@@ -111,7 +116,7 @@ const infos = {
       estilo: "cardjsMc"
     },
     {
-      id: 12 ,
+      id: "eq4",
       noticia: ["Equipes"],
       imagem: "imagens/Red Bull Racing.jpg",
       titulo: "Oracle Red Bull Racing",
@@ -121,7 +126,7 @@ const infos = {
       estilo: "cardjsRB"
     },
     {
-      id: 13 ,
+      id: "eq5",
       noticia: ["Equipes"],
       imagem: "imagens/Alpine.jpg",
       titulo: "Alpine Formula One Team",
@@ -131,7 +136,7 @@ const infos = {
       estilo: "cardjsAlp"
     },
     {
-      id: 14 ,
+      id: "eq6",
       noticia: ["Equipes"],
       imagem: "imagens/Racing Bulls.jpg",
       titulo: "Racing Bulls F1 Team",
@@ -141,7 +146,7 @@ const infos = {
       estilo: "cardjsRBs"
     },
     {
-      id: 15 ,
+      id: "eq7",
       noticia: ["Equipes"],
       imagem: "imagens/Haas F1 Team.jpg",
       titulo: "Haas F1 Team",
@@ -151,7 +156,7 @@ const infos = {
       estilo: "cardjsHaas"
     },
     {
-      id: 16 ,
+      id: "eq8",
       noticia: ["Equipes"],
       imagem: "imagens/Atlassian Williams Racing.jpg",
       titulo: "Atlassian Williams Racing",
@@ -161,7 +166,7 @@ const infos = {
       estilo: "cardjsWi"
     },
     {
-      id: 17 ,
+      id: "eq9",
       noticia: ["Equipes"],
       imagem: "imagens/Audi.jpg",
       titulo: "Audi Formula One Team",
@@ -171,7 +176,7 @@ const infos = {
       estilo: "cardjsAudi"
     },    
     {
-      id: 18 ,
+      id: "eq10",
       noticia: ["Equipes"],
       imagem: "imagens/Cadillac.avif",
       titulo: "Cadillac Formula One Team",
@@ -181,7 +186,7 @@ const infos = {
       estilo: "cardjsCdll"
     },    
     {
-      id: 19 ,
+      id: "eq11",
       noticia: ["Equipes"],
       imagem: "imagens/Aston Martin.jpg",
       titulo: "Aston Martin Aramco Formula One Team",
@@ -189,13 +194,15 @@ const infos = {
       motor: "⚙️ Motor: Honda",
       texto: "Chefia: Andy Cowell<br>Títulos de construtores: 0<br>Último título: nunca venceu<br>Pilotos 2026:<br>	Fernando Alonso<br>	Lance Stroll<br>Patrocinador master: Aramco<br>Entrada na F1: 2021<br>Tipo: equipe de fábrica<br>A Aston Martin aposta pesado em infraestrutura e na parceria com a Honda para finalmente lutar por vitórias regularmente.",
       estilo: "cardjsAstM"
-    }  
+    }
   ]
 };
 
 const carrossel = document.getElementById("carouselExampleCaptions");
 const itens = document.getElementById("itens-card");
 const detalhes = document.getElementById("detalhes-card");
+
+const itensEquipes = document.getElementById("itens-cardEquipes");
 
 function renderCards(cards) {
   if (!itens) return;
@@ -218,7 +225,7 @@ function renderCards(cards) {
   }
 }
 
-function renderCardsRelacionados(cards, container, itemAtual) {
+function renderCardsRelacionados(cards, container, itemAtual, tipo) {
   container.innerHTML = "";
   for (let i = 0; i < cards.length; i++) {
     const item = cards[i];
@@ -226,7 +233,7 @@ function renderCardsRelacionados(cards, container, itemAtual) {
     const col = document.createElement("div");
     col.className = "col-12 col-md-6 col-lg-3";
     col.innerHTML = 
-      `<a href="detalhes.html?id=${item.id}" class="text-decoration-none">
+      `<a href="detalhes.html?id=${item.id}&tipo=${tipo}" class="text-decoration-none">
         <div class="card h-85 ${item.estilo} p-3">
           <img src="${item.imagem}" alt="${item.titulo}" class="card-img-top">
           <div class="card-body">
@@ -242,7 +249,9 @@ function renderCardsRelacionados(cards, container, itemAtual) {
 function renderDetalhes() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
-  const item = infos.cards.find(c => String(c.id) === id);
+  const tipo = params.get("tipo");
+  const fonte = tipo === "equipe" ? equipes.cards : infos.cards;
+  const item = fonte.find(c => String(c.id) === id);
   detalhes.innerHTML = 
     `<div class="row py-4 mb-4 h-85 ${item.estilo} p-3">
       <div class="col-md-4">
@@ -256,7 +265,7 @@ function renderDetalhes() {
       </div>
     </div>
     <div class="row g-3" id="cards-relacionados"></div>`;
-  renderCardsRelacionados(infos.cards, document.getElementById("cards-relacionados"), item);
+  renderCardsRelacionados(fonte, document.getElementById("cards-relacionados"), item, tipo);
 }
 
 if (carrossel) {
