@@ -4,6 +4,12 @@ body{
 #carouselExampleCaptions{
     background-color: #404040;
 }
+.nav-link{
+    color: #E0E0E0;
+}
+.nav-link:hover{
+    color: #a30000;
+}
 .cardjsMerc{
     background-color: #000000;
     border-radius: 20px;
@@ -17,7 +23,7 @@ body{
 .cardjFer{
     background-color: #a30000;
     border-radius: 20px;
-    color: #000000;
+    color: #e0e0e0;
 }
 .cardjsMc{
     background-color: #fb8c04;
@@ -29,6 +35,44 @@ body{
     border-radius: 20px;
     color: #E0E0E0;
 }
+.cardjsAlp{
+    background-color: #e293b3;
+    border-radius: 20px;
+    color: #000000;
+}
+.cardjsRBs{
+    background-color: #112b83;
+    border-radius: 20px;
+    color: #E0E0E0;
+}
+.cardjsHaas{
+    background-color: #b8262a;
+    border-radius: 20px;
+    color: #000000;
+}
+.cardjsWi{
+    background-color: #2857b7;
+    border-radius: 20px;
+    color: #000000;
+}
+.cardjsAudi{
+    background-color: #9c9ca4;
+    border-radius: 20px;
+    color: #000000;
+}
+.cardjsCdll{
+    background-color: #b7c3cf;
+    border-radius: 20px;
+    color: #000000;
+}
+.cardjsAstM{
+    background-color: #3e7a82;
+    border-radius: 20px;
+    color: #000000;
+}
+
+
+
 #footer{
     background-color: #404040;
     border-radius: 10px;

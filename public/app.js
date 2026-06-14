@@ -89,37 +89,107 @@ const infos = {
       motor: "⚙️ Motor: Mercedes",
       texto: "Chefia: Toto Wolff<br>Títulos de construtores: 8<br>Último título: 2021<br>Pilotos 2026:<br>George Russell<br>Kimi Antonelli<br>Entrada na F1: 2010<br>Tipo: equipe oficial de fábrica<br><br>A Mercedes iniciou 2026 muito forte após a introdução do novo regulamento técnico, sendo considerada uma das favoritas ao título.<br>Resultados recentes 2026<br>Vitórias: 3<br>Pódios: 8<br>Poles: 4",
       estilo: "cardjsMerc"
-      },
-    {
-        id: 10 ,
-        noticia: ["Equipes"],
-        imagem: "imagens/Ferrari.jpg",
-        titulo: "Scuderia Ferrari HP",
-        situado: "📍 Base: Maranello, Itália",
-        motor: "⚙️ Motor: Ferrari",
-        texto: "Chefia: Frédéric Vasseur<br>Títulos de construtores: 16<br>Último título: 2008<br>Pilotos 2026:<br>Lewis Hamilton <br>Charles Leclerc<br>Entrada na F1: 1950<br>Tipo: equipe histórica de fábrica<br><br>A Ferrari chega em 2026 tentando voltar ao topo da Fórmula 1 com Hamilton e Leclerc formando uma das duplas mais fortes do grid.",
-        estilo:"cardjFer"
-      },
-    {
-        id: 11 ,
-        noticia: ["Equipes"],
-        imagem: "imagens/Mclaren.jpg",
-        titulo: "McLaren Mastercard F1 Team",
-        situado: "📍 Base: Woking, Inglaterra",
-        motor: "⚙️ Motor: Mercedes",
-        texto: "Chefia: Andrea Stella<br>Títulos de construtores: 10<br>Último título: 2025<br>Pilotos 2026:<br>Lando Norris<br>Oscar Piastri<br>Patrocinador master: Mastercard<br>Entrada na F1: 1966<br><br>Tipo: equipe histórica independente<br>A McLaren vive uma fase extremamente forte e chega como uma das favoritas após temporadas muito competitivas.",
-        estilo: "cardjsMc"
     },
     {
-        id: 12 ,
-        noticia: ["Equipes"],
-        imagem: "imagens/Red Bull Racing.jpg",
-        titulo: "Oracle Red Bull Racing",
-        situado: "📍 Base: Milton Keynes, Inglaterra",
-        motor: "⚙️ Motor: Ford Red Bull",
-        texto: "Chefia: Laurent Mekies<br>Títulos de construtores: 6<br> Último título: 2023<br>Pilotos 2026:<br>Max Verstappen<br>Isack Hadjar<br>Patrocinador master: Oracle<br>Entrada na F1: 2005<br>Tipo: equipe de fábrica parceria<br><br>Mesmo após mudanças internas, a Red Bull continua fortíssima graças ao talento de Verstappen e ao novo projeto com a Ford.",
-        estilo: "cardjsRB"
-      }
+      id: 10 ,
+      noticia: ["Equipes"],
+      imagem: "imagens/Ferrari.jpg",
+      titulo: "Scuderia Ferrari HP",
+      situado: "📍 Base: Maranello, Itália",
+      motor: "⚙️ Motor: Ferrari",
+      texto: "Chefia: Frédéric Vasseur<br>Títulos de construtores: 16<br>Último título: 2008<br>Pilotos 2026:<br>Lewis Hamilton <br>Charles Leclerc<br>Entrada na F1: 1950<br>Tipo: equipe histórica de fábrica<br><br>A Ferrari chega em 2026 tentando voltar ao topo da Fórmula 1 com Hamilton e Leclerc formando uma das duplas mais fortes do grid.",
+      estilo:"cardjFer"
+    },
+    {
+      id: 11 ,
+      noticia: ["Equipes"],
+      imagem: "imagens/Mclaren.jpg",
+      titulo: "McLaren Mastercard F1 Team",
+      situado: "📍 Base: Woking, Inglaterra",
+      motor: "⚙️ Motor: Mercedes",
+      texto: "Chefia: Andrea Stella<br>Títulos de construtores: 10<br>Último título: 2025<br>Pilotos 2026:<br>Lando Norris<br>Oscar Piastri<br>Patrocinador master: Mastercard<br>Entrada na F1: 1966<br><br>Tipo: equipe histórica independente<br>A McLaren vive uma fase extremamente forte e chega como uma das favoritas após temporadas muito competitivas.",
+      estilo: "cardjsMc"
+    },
+    {
+      id: 12 ,
+      noticia: ["Equipes"],
+      imagem: "imagens/Red Bull Racing.jpg",
+      titulo: "Oracle Red Bull Racing",
+      situado: "📍 Base: Milton Keynes, Inglaterra",
+      motor: "⚙️ Motor: Ford Red Bull",
+      texto: "Chefia: Laurent Mekies<br>Títulos de construtores: 6<br> Último título: 2023<br>Pilotos 2026:<br>Max Verstappen<br>Isack Hadjar<br>Patrocinador master: Oracle<br>Entrada na F1: 2005<br>Tipo: equipe de fábrica parceria<br><br>Mesmo após mudanças internas, a Red Bull continua fortíssima graças ao talento de Verstappen e ao novo projeto com a Ford.",
+      estilo: "cardjsRB"
+    },
+    {
+      id: 13 ,
+      noticia: ["Equipes"],
+      imagem: "imagens/Alpine.jpg",
+      titulo: "Alpine Formula One Team",
+      situado: "📍 Base: Enstone, Inglaterra",
+      motor: "⚙️ Motor: Mercedes",
+      texto: "Chefia: Flavio Briatore<br>Títulos de construtores: 2<br>Último título: 2006<br>Pilotos 2026:<br>	Pierre Gasly<br>	Franco Colapinto<br>Patrocinador master: BWT<br>Entrada na F1: 2021<br>Tipo: equipe de fábrica<br>A Alpine tenta se consolidar novamente no pelotão intermediário após várias mudanças técnicas e administrativas.",
+      estilo: "cardjsAlp"
+    },
+    {
+      id: 14 ,
+      noticia: ["Equipes"],
+      imagem: "imagens/Racing Bulls.jpg",
+      titulo: "Racing Bulls F1 Team",
+      situado: "📍 Base: Faenza, Itália",
+      motor: "⚙️ Motor: Ford Red Bull",
+      texto: "Chefia: Alan Permane<br>Títulos de construtores: 0<br>Último título: nunca venceu<br>Pilotos 2026:<br>	Liam Lawson<br>	Arvid Lindblad<br>Patrocinador master: Visa Cash App<br>Entrada na F1: 2006<br>Tipo: equipe satélite<br>A Racing Bulls segue como equipe de desenvolvimento da Red Bull, agora apostando em uma dupla jovem e agressiva.",
+      estilo: "cardjsRBs"
+    },
+    {
+      id: 15 ,
+      noticia: ["Equipes"],
+      imagem: "imagens/Haas F1 Team.jpg",
+      titulo: "Haas F1 Team",
+      situado: "📍 Base: Kannapolis, Estados Unidos",
+      motor: "⚙️ Motor: Ferrari",
+      texto: "Chefia: Ayao Komatsu<br>Títulos de construtores: 0<br>Último título: nunca venceu<br>Pilotos 2026:<br>  Esteban Ocon<br>	Oliver Bearman<br>Patrocinador master: MoneyGram<br>Entrada na F1: 2016<br>Tipo: equipe cliente<br>A Haas continua apostando em jovens talentos e na parceria técnica com a Ferrari para crescer no grid.",
+      estilo: "cardjsHaas"
+    },
+    {
+      id: 16 ,
+      noticia: ["Equipes"],
+      imagem: "imagens/Atlassian Williams Racing.jpg",
+      titulo: "Atlassian Williams Racing",
+      situado: "📍 Base: Grove, Inglaterra",
+      motor: "⚙️ Motor: Mercedes",
+      texto: "Chefia: James Vowles<br>Títulos de construtores: 9<br>Último título: 1997<br>Pilotos 2026:<br>  Carlos Sainz<br>  Alexander Albon<br>Patrocinador master: Atlassian<br>Entrada na F1: 1977<br>Tipo: equipe histórica independente<br>A Williams vive um processo de reconstrução e sonha em voltar ao grupo das equipes mais competitivas do grid.",
+      estilo: "cardjsWi"
+    },
+    {
+      id: 17 ,
+      noticia: ["Equipes"],
+      imagem: "imagens/Audi.jpg",
+      titulo: "Audi Formula One Team",
+      situado: "📍 Base: Hinwil, Suíça",
+      motor: "⚙️ Motor: Audi",
+      texto: "Chefia: Mattia Binotto<br>Títulos de construtores: 0<br>Último título: nunca venceu<br>Pilotos 2026:<br>  Nico Hülkenberg<br>	Gabriel Bortoleto<br>Patrocinador master: Revolut<br>Entrada na F1: 2026<br>Tipo: equipe oficial de fábrica<br>A Audi estreia oficialmente na Fórmula 1 em 2026 iniciando um projeto ambicioso de longo prazo.",
+      estilo: "cardjsAudi"
+    },    
+    {
+      id: 18 ,
+      noticia: ["Equipes"],
+      imagem: "imagens/Cadillac.avif",
+      titulo: "Cadillac Formula One Team",
+      situado: "📍 Base: Fishers, Estados Unidos",
+      motor: "⚙️ Motor: Ferrari",
+      texto: "Chefia: Graeme Lowdon<br>Títulos de construtores: 0<br>Último título: nunca venceu<br>Pilotos 2026:<br>	Sergio Pérez<br>	Valtteri Bottas<br>Patrocinador master: General Motors<br>Entrada na F1: 2026<br>Tipo: equipe de fábrica<br>A Cadillac estreia na Fórmula 1 como a grande novidade do grid de 2026, trazendo enorme expectativa do mercado americano.",
+      estilo: "cardjsCdll"
+    },    
+    {
+      id: 19 ,
+      noticia: ["Equipes"],
+      imagem: "imagens/Aston Martin.jpg",
+      titulo: "Aston Martin Aramco Formula One Team",
+      situado: "📍 Base: Silverstone, Inglaterra",
+      motor: "⚙️ Motor: Honda",
+      texto: "Chefia: Andy Cowell<br>Títulos de construtores: 0<br>Último título: nunca venceu<br>Pilotos 2026:<br>	Fernando Alonso<br>	Lance Stroll<br>Patrocinador master: Aramco<br>Entrada na F1: 2021<br>Tipo: equipe de fábrica<br>A Aston Martin aposta pesado em infraestrutura e na parceria com a Honda para finalmente lutar por vitórias regularmente.",
+      estilo: "cardjsAstM"
+    }  
   ]
 };
 
@@ -199,6 +269,7 @@ if (carrossel) {
       window.location.href = `detalhes.html?id=${id}`;
   });
 }
+
 if (itens) 
   renderCards(infos.cards);
 if (detalhes) 
